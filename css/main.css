@@ -58,31 +58,8 @@ text-align: center;
     display: flex;
     flex-direction: column; 
 }
-/* html alimentacion */
-.padre{
-    display: grid;
-    height: 100vh; 
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "hijo-uno hijo-dos"
-    "hijo-uno hijo-tres"
-    "hijo-uno hijo-cuatro"
-    
-}
-.hijo-uno{
-    grid-area: hijo-uno;
-}
-.hijo-dos{
-    grid-area: hijo-dos;
-}
-.hijo-tres{
-    grid-area: hijo-tres;
-}
-.hijo-cuatro{
-    grid-area: hijo-cuatro;
-}
 
+ 
     
 .img-ali{
     height: 300px;
@@ -91,6 +68,8 @@ text-align: center;
 .img-tox{
     width: 200px;
     height: 200px;
+    max-width: 50%;
+    
 }
 
 /* bienestar */
@@ -98,8 +77,58 @@ text-align: center;
     height: 200px;
     width: 300px;
 }
+.parrafo-foto{
+    display: flex;
+    align-items: center;
+}
 
 /* recetas */
-.tipo-recetas{
+ .tipo-recetas{
     font-size:20px ;
+}
+
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #bfec92a9; 
+    }
+
+    .logo {
+        width: 40px; 
+        height: 40px; 
+    }
+
+    .menu {
+        font-size: 16px; 
+    }
+
+    h1,
+    h2 {
+        font-size: 24px; 
+        margin-top: 10px; 
+    }
+
+    footer {
+        margin-top: 10px; /* Aumenta el espacio superior del pie de página para dispositivos móviles */
+    }
+
+    .redes img {
+        width: 30px; 
+        height: 30px; 
+    }
+
+    p {
+        font-size: 18px; 
+        margin: 10px 0; 
+    }
+
+    .img-uno {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .tipo-recetas {
+        font-size: 16px; 
+    }
 }

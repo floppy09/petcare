@@ -1,3 +1,138 @@
-h1{
-    background-color: aqua;
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* color menu */
+.bg-verde {
+    background-color: #9cb286;
+}
+
+body {
+    background-color: #bfec92a9;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.menu {
+    font-size: 20px;
+    text-align: right;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #9cb286;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #9cb286;
+    margin-top: auto;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    position: relative;
+}
+
+/* tipografia parrafo */
+p {
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.img-uno {
+    margin: 10px;
+    height: 240px;
+}
+
+.falso-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-ali {
+    height: 300px;
+    padding: 10px;
+}
+
+.img-tox {
+    width: 200px;
+    height: 200px;
+    max-width: 50%;
+}
+
+/* bienestar */
+.img-bi {
+    height: 200px;
+    width: 300px;
+}
+
+.parrafo-foto {
+    display: flex;
+    align-items: center;
+}
+
+/* recetas */
+.tipo-recetas {
+    font-size: 20px;
+}
+
+/* Media Query para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    body {
+        background-color: #bfec92a9;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu {
+        font-size: 16px;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+
+    .redes img {
+        width: 30px;
+        height: 30px;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .img-uno {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .tipo-recetas {
+        font-size: 16px;
+    }
 }
