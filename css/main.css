@@ -1,0 +1,105 @@
+ /* reset css */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+/* color menu */
+.bg-verde{
+    background-color:  #9cb286;
+}
+body{
+    background-color: #bfec92a9;   
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.menu{
+    font-size: 20px;
+    text-align: right; 
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: #9cb286;
+}
+h2{
+    display: flex;
+    justify-content: center; 
+
+}
+footer{
+    background-color: #9cb286;
+    margin-top: auto;
+}
+.redes img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    position: relative;
+    
+}
+/* tipografia parrafo */
+p{
+font-family: 'Heebo', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-size: 25px; 
+text-align: center;
+
+}
+.img-uno{
+     margin: 10px;  
+    height: 240px;
+    
+} 
+
+.falso-body{
+    display: flex;
+    flex-direction: column; 
+}
+/* html alimentacion */
+.padre{
+    display: grid;
+    height: 100vh; 
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hijo-uno hijo-dos"
+    "hijo-uno hijo-tres"
+    "hijo-uno hijo-cuatro"
+    
+}
+.hijo-uno{
+    grid-area: hijo-uno;
+}
+.hijo-dos{
+    grid-area: hijo-dos;
+}
+.hijo-tres{
+    grid-area: hijo-tres;
+}
+.hijo-cuatro{
+    grid-area: hijo-cuatro;
+}
+
+    
+.img-ali{
+    height: 300px;
+    padding: 10px;
+}
+.img-tox{
+    width: 200px;
+    height: 200px;
+}
+
+/* bienestar */
+.img-bi{
+    height: 200px;
+    width: 300px;
+}
+
+/* recetas */
+.tipo-recetas{
+    font-size:20px ;
+}
