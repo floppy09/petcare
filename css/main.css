@@ -1,134 +1,85 @@
- /* reset css */
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
-/* color menu */
-.bg-verde{
-    background-color:  #9cb286;
-}
-body{
-    background-color: #bfec92a9;   
-}
-.logo{
-    width: 60px;
-    height: 60px;
-}
-.menu{
-    font-size: 20px;
-    text-align: right; 
-}
-h1{
+.bg-verde {
+  background-color: #9cb286; }
+
+body {
+  background-color: #bfec92a9; }
+
+.logo {
+  width: 60px;
+  height: 60px; }
+
+.menu {
+  font-size: 20px;
+  text-align: right; }
+
+p {
+  font-family: "Heebo", sans-serif, "Poppins", sans-serif;
+  text-align: center;
+  font-size: 25px; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; }
+  main h1 {
+    text-align: center;
+    color: #9cb286; }
+  main h2 {
+    text-align: center; }
+  main .img {
     display: flex;
-    justify-content: center;
-    color: #9cb286;
-}
-h2{
-    display: flex;
-    justify-content: center; 
+    justify-content: center; }
+    main .img img {
+      width: 70%; }
 
-}
-footer{
-    background-color: #9cb286;
-    margin-top: auto;
-}
-.redes img{
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    position: relative;
-    
-}
-/* tipografia parrafo */
-p{
-font-family: 'Heebo', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-size: 25px; 
-text-align: center;
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem; }
 
-}
-.img-uno{
-     margin: 10px;  
-    height: 240px;
-    
-} 
+footer {
+  background-color: #9cb286;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem; }
+  footer p {
+    font-size: 10px; }
+  footer .img-redes {
+    width: 40px; }
 
-.falso-body{
-    display: flex;
-    flex-direction: column; 
-}
+.img-dos {
+  display: flex;
+  justify-content: center;
+  width: 40%; }
 
- 
-    
-.img-ali{
-    height: 300px;
-    padding: 10px;
-}
-.img-tox{
-    width: 200px;
-    height: 200px;
-    max-width: 50%;
-    
-}
+.p-1 {
+  font-size: 20px;
+  background-color: none; }
 
-/* bienestar */
-.img-bi{
-    height: 200px;
-    width: 300px;
-}
-.parrafo-foto{
-    display: flex;
-    align-items: center;
-}
+.p-2 {
+  font-size: 15px;
+  background-color: #d0e0c0a9; }
 
-/* recetas */
- .tipo-recetas{
-    font-size:20px ;
-}
+.p-3 {
+  font-size: 15px;
+  background-color: none; }
 
+.p-0 {
+  font-style: italic;
+  text-decoration: underline; }
 
-/* Media Query para dispositivos móviles */
-@media screen and (max-width: 767px) {
-    body {
-        background-color: #bfec92a9; 
-    }
+.video {
+  height: 400px;
+  padding: 10px; }
 
-    .logo {
-        width: 40px; 
-        height: 40px; 
-    }
+.carousel-item {
+  width: 70%;
+  justify-content: center; }
 
-    .menu {
-        font-size: 16px; 
-    }
-
-    h1,
-    h2 {
-        font-size: 24px; 
-        margin-top: 10px; 
-    }
-
-    footer {
-        margin-top: 10px; /* Aumenta el espacio superior del pie de página para dispositivos móviles */
-    }
-
-    .redes img {
-        width: 30px; 
-        height: 30px; 
-    }
-
-    p {
-        font-size: 18px; 
-        margin: 10px 0; 
-    }
-
-    .img-uno {
-        max-width: 100%; 
-        height: auto; 
-    }
-
-    .tipo-recetas {
-        font-size: 16px; 
-    }
-}
+.caja {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 10px;
+  padding: 10px; }

@@ -1,138 +1,136 @@
-/* reset css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+// Variables
+.bg-verde{
+    background-color:  #9cb286;
+     }
+$primary-bg-color: #9cb286;
+$secondary-bg-color: #bfec92a9;
+$primary-text-color: #9cb286;
+$primary-link-color: #007bff;
+$primary-link-hover-color: #0056b3;
+$primary-font: 'Heebo', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+
+// Mixin para estilos de texto
+@mixin texto-basico {
+  font-family: $primary-font, $secondary-font;
+  text-align: center;
 }
 
-/* color menu */
-.bg-verde {
-    background-color: #9cb286;
-}
-
+// Estilos globales
 body {
-    background-color: #bfec92a9;
+  background-color: $secondary-bg-color;
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .menu {
-    font-size: 20px;
-    text-align: right;
+  font-size: 20px;
+  text-align: right;
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    color: #9cb286;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-}
-
-footer {
-    background-color: #9cb286;
-    margin-top: auto;
-}
-
-.redes img {
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    position: relative;
-}
-
-/* tipografia parrafo */
+// Tipografía para párrafos
 p {
-    font-family: 'Heebo', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+  @include texto-basico;
+  font-size: 25px;
+}
+
+// Estilos para 'main'
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  h1 {
     text-align: center;
-}
+    color: $primary-text-color;
+  }
 
-.img-uno {
-    margin: 10px;
-    height: 240px;
-}
+  h2 {
+    text-align: center;
+  }
 
-.falso-body {
+  .img {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 70%;
+    }
+  }
 }
 
-.img-ali {
-    height: 300px;
-    padding: 10px;
+// Estilos para 'section'
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
 }
 
-.img-tox {
-    width: 200px;
-    height: 200px;
-    max-width: 50%;
+// Estilos para 'footer'
+footer {
+  background-color: $primary-text-color;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  p {
+    font-size: 10px;
+  }
+  .img-redes {
+    width: 40px;
+  }
 }
 
-/* bienestar */
-.img-bi {
-    height: 200px;
-    width: 300px;
+// Estilos específicos para 'img-dos'
+.img-dos {
+  display: flex;
+  justify-content: center;
+  width: 40%;
 }
 
-.parrafo-foto {
-    display: flex;
-    align-items: center;
+// Mixin para estilos de párrafo
+@mixin parrafo($font-size, $bg-color: none) {
+  font-size: $font-size;
+  background-color: $bg-color;
 }
 
-/* recetas */
-.tipo-recetas {
-    font-size: 20px;
+// Estilos para clases p-1, p-2 y p-3
+.p-1 {
+  @include parrafo(20px);
 }
 
-/* Media Query para dispositivos móviles */
-@media screen and (max-width: 767px) {
-    body {
-        background-color: #bfec92a9;
-    }
+.p-2 {
+  @include parrafo(15px, #d0e0c0a9);
+}
 
-    .logo {
-        width: 40px;
-        height: 40px;
-    }
+.p-3 {
+  @include parrafo(15px);
+}
 
-    .menu {
-        font-size: 16px;
-    }
+// Estilo para la clase p-0
+.p-0 {
+  font-style: italic;
+  text-decoration: underline;
+}
 
-    h1,
-    h2 {
-        font-size: 24px;
-        margin-top: 10px;
-    }
+// Estilos para '.video' y '.carousel-item'
+.video {
+  height: 400px;
+  padding: 10px;
+}
 
-    footer {
-        margin-top: 10px;
-    }
+.carousel-item {
+  width: 70%;
+  justify-content: center;
+}
 
-    .redes img {
-        width: 30px;
-        height: 30px;
-    }
-
-    p {
-        font-size: 18px;
-        margin: 10px 0;
-    }
-
-    .img-uno {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .tipo-recetas {
-        font-size: 16px;
-    }
+// Estilos específicos para 'caja'
+.caja {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 10px;
+  padding: 10px;
 }
